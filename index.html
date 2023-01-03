@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="assets/system.css" />
+  <link rel="stylesheet" href="assets/layout.css" />
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="menu-bar" id="header-content">
+      <div id="left-header-items">
+        <ul role="menu-bar">
+          <li role="menu-item" tabindex="0" aria-haspopup="true" class="padded-menu-item" id="system-menu">
+            <strong style="font-size:16px;">WSTerm</strong>
+            <ul role="menu" >
+              <li role="menu-item" ><a id="connect-last" href="#" onclick="this.blur()">Connect (echo server)</a></li>
+              <li role="menu-item" class="divider"><a href="#" onclick="this.blur()">Connect to...</a></li>
+              <li role="menu-item"><a id="help-link" href="#" onclick="this.blur()">Help</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="right-header-items">
+        <ul role="menu-bar">
+          <ul role="menu-bar">
+            <li role="menu-item" tabindex="0">
+              <a href="https://github.com/kibels/websocket-client">
+                GitLab
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main id="main-container">
+    <section id="game-container">
+      <div id="game-view">
+
+      </div>
+      <div id="game-input-container">
+        <span for="game-input" class="input-prompt">
+          <input type="text" id="game-input" />
+        </span>
+      </div>
+    </section>
+    <aside id="game-sidepanel">
+      <div id="status-pane">
+
+      </div>
+      <div id="map-pane">
+
+      </div>
+    </aside>
+  </main>
+</body>
+
+</html>
